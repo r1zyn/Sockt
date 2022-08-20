@@ -4,7 +4,7 @@
     overflow-y: scroll;
     flex: auto;
     background: #36393F;
-    height: 83vh;
+    height: 100%;
 }
 
 .messages::-webkit-scrollbar {
