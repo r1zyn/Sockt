@@ -1,0 +1,60 @@
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.joinInnerContainer {
+    width: 20%;
+    z-index: 3000;
+}
+
+.joinInput {
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.joinInput:focus {
+    outline: none;
+}
+
+.heading {
+    color: #7289da;
+    font-size: 2.5em;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #7289da;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+        height: 100%;
+    }
+
+    .joinInnerContainer {
+        width: 90%;
+    }
+}

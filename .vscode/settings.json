@@ -1,0 +1,30 @@
+{
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 1000,
+	"files.insertFinalNewline": false,
+	"files.trimFinalNewlines": true,
+	"editor.formatOnSave": true,
+	"editor.maxTokenizationLineLength": 100000,
+	"extensions.ignoreRecommendations": false,
+	"editor.formatOnType": true,
+	"editor.formatOnPaste": true,
+    "eslint.workingDirectories": [
+        "../client",
+        "../server"
+    ],
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsx]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

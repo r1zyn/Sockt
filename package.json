@@ -1,0 +1,27 @@
+{
+    "name": "sockt",
+    "version": "1.0.0",
+    "description": "Real time chat application made in Node.js with socket.io, Express and Next.js",
+    "author": {
+        "email": "ascendus.dev@gmail.com",
+        "name": "r1zyn"
+    },
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "+https://github.com/r1zyn/Sockt"
+    },
+    "bugs": {
+        "url": "https://github.com/r1zyn/Sockt/issues"
+    },
+    "keywords": [
+        "sockt",
+        "chat",
+        "realtime",
+        "app",
+        "Node.js",
+        "socket.io",
+        "Express",
+        "Next.js"
+    ]
+}

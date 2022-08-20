@@ -1,0 +1,21 @@
+.messages {
+    padding: 5% 0;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    flex: auto;
+    background: #36393F;
+}
+
+.messages::-webkit-scrollbar {
+    width: 7px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: #27282c;
+    border-radius: 20px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #1a1a1d;
+}

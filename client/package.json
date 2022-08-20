@@ -1,0 +1,47 @@
+{
+	"name": "client",
+	"description": "Client side application made with Next.js",
+	"version": "0.1.0",
+	"main": "pages/_app.tsx",
+	"license": "GPL-3.0",
+	"author": {
+		"email": "ascendus.dev@gmail.com",
+		"name": "r1zyn"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"format": "prettier --write .",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@types/react-scroll-to-bottom": "^4.2.0",
+		"next": "12.2.5",
+		"query-string": "^7.1.1",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-emoji-render": "^1.2.4",
+		"socket.io-client": "^4.5.1"
+	},
+	"devDependencies": {
+		"@types/node": "18.7.6",
+		"@types/react": "18.0.17",
+		"@types/react-dom": "18.0.6",
+		"eslint": "8.22.0",
+		"eslint-config-next": "12.2.5",
+		"prettier": "^2.7.1",
+		"typescript": "4.7.4"
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSameLine": true,
+		"bracketSpacing": true,
+		"singleQuote": false,
+		"tabWidth": 4,
+		"useTabs": true,
+		"trailingComma": "none",
+		"quoteProps": "preserve",
+		"semi": true
+	}
+}

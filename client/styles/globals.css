@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Azonix";
+    src: url("../public/fonts/Azonix.otf");
+}
+
+:root {
+    --bg-color: #111111ff;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: "Azonix", sans-serif;
+    background-color: var(--bg-color);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+* {
+	box-sizing: border-box;
+}

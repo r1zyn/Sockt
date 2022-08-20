@@ -1,0 +1,16 @@
+# Dependencies
+**/*/node_modules
+
+# Next.js
+.next
+
+# Unwanted file formats
+*.ico
+*.lock
+
+# Config files
+.editorconfig
+**/*/.prettierignore
+**/*/.gitignore
+**/*/.gitattributes
+client/next-env.d.ts
