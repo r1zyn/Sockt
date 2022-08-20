@@ -1,4 +1,5 @@
-import { Emojione } from "react-emoji-render";
+import Emoji from "react-emoji-render";
+import Linkify from "react-linkify";
 import { NextComponent } from "../lib/next";
 
 import styles from "../styles/message.module.css";
@@ -13,33 +14,38 @@ export const Message: NextComponent<MessageProps> = ({
 	name
 }: MessageProps): JSX.Element => {
 	let isSentByCurrentUser = false;
-    const trimmedName = name.trim();
+	const trimmedName = name.trim();
 
 	if (user === trimmedName) {
 		isSentByCurrentUser = true;
 	}
 
-	return isSentByCurrentUser ? (
-		<div className={`${styles.messageContainer} ${styles.justifyEnd}`}>
-			<p className={`${styles.sentText} ${styles["pr-10"]}`}>
-				{trimmedName}
-			</p>
-			<div className={`${styles.messageBox} ${styles.backgroundGrey}`}>
-				<p className={`${styles.messageText} ${styles.colorWhite}`}>
-					<Emojione text={text} />
+	return (
+		<div className={styles.messageContainer}>
+			<span className={styles.messageHeader}>
+				<p className={styles.userText}>
+					{isSentByCurrentUser ? trimmedName : user}
 				</p>
-			</div>
-		</div>
-	) : (
-		<div className={`${styles.messageContainer} ${styles.justifyStart}`}>
-			<div className={`${styles.messageBox} ${styles.backgroundBlue}`}>
-				<p className={`${styles.messageText} ${styles.colorWhite}`}>
-					<Emojione text={text} />
-				</p>
-			</div>
-			<p className={`${styles.sentText} ${styles["pl-10"]}`}>
-				{user}
-			</p>
+				<p className={styles.date}>{new Date().toLocaleDateString()}</p>
+			</span>{" "}
+			<Linkify
+				componentDecorator={(
+					decoratedHref: string,
+					decoratedText: string,
+					key: number
+				): JSX.Element => (
+					<a
+						target="blank"
+						href={decoratedHref}
+						key={key}
+						className={styles.link}>
+						{decoratedText}
+					</a>
+				)}>
+				<p className={styles.messageText}>
+					<Emoji text={text} />
+				</p>{" "}
+			</Linkify>
 		</div>
 	);
 };

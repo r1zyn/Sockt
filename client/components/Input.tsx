@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NextComponent } from "../lib/next";
+
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/input.module.css";
 
@@ -18,20 +21,20 @@ export const Input: NextComponent<InputProps> = ({
 			<input
 				className={styles.input}
 				type="text"
-				placeholder="Enter your message..."
+				placeholder="Say something..."
 				value={message}
-				onChange={(event) =>
-					setMessage(event.target.value)
-				}
+				onChange={(event) => setMessage(event.target.value)}
 				onKeyDown={(event) =>
 					event.key === "Enter" ? sendMessage(event) : null
 				}
 			/>
-			<button
-				className={styles.sendButton}
-				onClick={(event) => sendMessage(event)}>
-				Send
-			</button>
+			<div className={styles.sendContainer}>
+				<button
+					className={styles.sendButton}
+					onClick={(event) => sendMessage(event)}>
+					<FontAwesomeIcon icon={faPaperPlane} />
+				</button>
+			</div>
 		</form>
 	);
 };

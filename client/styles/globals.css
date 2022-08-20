@@ -3,6 +3,11 @@
     src: url("../public/fonts/Azonix.otf");
 }
 
+@font-face {
+    font-family: "ABC Ginto Normal";
+    src: url("../public/fonts/ABCGintoNormal-Regular-Trial.otf");
+}
+
 :root {
     --bg-color: #111111ff;
 }
