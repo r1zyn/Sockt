@@ -45,3 +45,9 @@
     color: #989da5;
     width: 100%;
 }
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .textContainer {
+        display: none;
+    }
+}
