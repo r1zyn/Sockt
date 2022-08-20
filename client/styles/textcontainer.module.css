@@ -5,8 +5,7 @@
     background: #36393F;
     border-bottom: 1px solid var(--bg-color);
     height: 60px;
-    width: 15%;
-    position: absolute;
+    width: 100%;
 }
 
 .textContainer {
@@ -21,9 +20,13 @@
     width: 15%;
 }
 
-.activeContainer {
+.textContainer>div {
+    padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.activeContainer {
     display: flex;
     align-items: center;
 }
@@ -46,7 +49,7 @@
     width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 400px) {
     .textContainer {
         display: none;
     }
