@@ -31,10 +31,9 @@ const Join: NextPage = (): JSX.Element => {
 	useEffect((): void => {
 		socket = io(process.env.SOCKET_ENDPOINT);
 
-		socket.on("roomData", ({ users }: { users: User[] }): void => {
-			setUsers(users as any);
-			console.log("Data received");
-		});
+		socket.on("roomData", ({ users }: { users: User[] }): void =>
+			setUsers(users as any)
+		);
 	}, [users]);
 
 	return (

@@ -12,7 +12,7 @@ const Home: NextPage = (): JSX.Element => {
 	return (
 		<>
 			<Meta
-				title="Sockt | Realtime Chat Application"
+				title="Redefining Limitations | Sockt"
 				description="Welcome to Sockt, a realtime chat application developed in Node.js with Next.js, Socket.io and express. Create a room to get started and chat with friends!"
 			/>
 

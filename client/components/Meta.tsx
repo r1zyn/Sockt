@@ -27,10 +27,24 @@ export const Meta: NextComponent<MetaProps> = (
 					"No description was provided for this page."
 				}
 			/>
-			<meta property="site_name" content="Sockt" />
-			<meta name="theme-color" content={metadata["theme-color"]} />
+			<meta name="robots" content="all" />
+			<meta name="DC.title" content={props.title} />
+			<meta
+				name="keywords"
+				content="sockt,chat,realtime,app,Node.js,socket.io,Express,Next.js"
+			/>
 
-			<meta property="og:type" content="website" />   
+			<meta name="theme-color" content={metadata["theme-color"]} />
+			<meta
+				name="apple-mobile-web-app-status-bar-style"
+				content={metadata["theme-color"]}
+			/>
+			<meta
+				name="msapplication-navbutton-color"
+				content={metadata["theme-color"]}
+			/>
+
+			<meta property="og:type" content="website" />
 			<meta property="og:url" content={metadata["url"]} />
 			<meta property="og:title" content={props.title} />
 			<meta
