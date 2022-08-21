@@ -40,6 +40,7 @@ export const Meta: NextComponent<MetaProps> = (
 				}
 			/>
 			<meta property="og:image" content={metadata["image"]} />
+			<meta property="og:site_name" content="Sockt" />
 
 			<meta property="twitter:card" content="summary_large_image" />
 			<meta property="twitter:url" content={metadata["url"]} />

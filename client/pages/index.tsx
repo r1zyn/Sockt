@@ -13,7 +13,7 @@ const Home: NextPage = (): JSX.Element => {
 		<>
 			<Meta
 				title="Sockt - Realtime Chat Application"
-				description="Welcome to Sockt, a realtime chat application developed in Node.js with Next.js, Socket.io and express."
+				description="Welcome to Sockt, a realtime chat application developed in Node.js with Next.js, Socket.io and express. Create a room to get started and chat with friends!"
 			/>
 
 			<PolgyonContainer>

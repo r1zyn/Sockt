@@ -41,7 +41,7 @@ const Join: NextPage = (): JSX.Element => {
 		<>
 			<Meta
 				title="Join Chatroom - Sockt"
-				description="Join a Sockt chatroom with a provided username and chat room name."
+				description="Start chatting with your friends by creating or joining a chatroom. Choose a username and create a new chatroom or join an existing chatroom."
 			/>
 
 			<PolgyonContainer>
