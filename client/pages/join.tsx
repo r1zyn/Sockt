@@ -40,7 +40,7 @@ const Join: NextPage = (): JSX.Element => {
 	return (
 		<>
 			<Meta
-				title="Join Chatroom - Sockt"
+				title="The Portal To Immersation | Sockt."
 				description="Start chatting with your friends by creating or joining a chatroom. Choose a username and create a new chatroom or join an existing chatroom."
 			/>
 

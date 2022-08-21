@@ -24,19 +24,20 @@ export const Meta: NextComponent<MetaProps> = (
 				name="description"
 				content={
 					props.description ||
-					"No description was rpovided for this page."
+					"No description was provided for this page."
 				}
 			/>
+			<meta property="site_name" content="Sockt" />
 			<meta name="theme-color" content={metadata["theme-color"]} />
 
-			<meta property="og:type" content="website" />
+			<meta property="og:type" content="website" />   
 			<meta property="og:url" content={metadata["url"]} />
 			<meta property="og:title" content={props.title} />
 			<meta
 				property="og:description"
 				content={
 					props.description ||
-					"No description was rpovided for this page."
+					"No description was provided for this page."
 				}
 			/>
 			<meta property="og:image" content={metadata["image"]} />
@@ -49,7 +50,7 @@ export const Meta: NextComponent<MetaProps> = (
 				property="twitter:description"
 				content={
 					props.description ||
-					"No description was rpovided for this page."
+					"No description was provided for this page."
 				}
 			/>
 			<meta property="twitter:image" content={metadata["image"]} />

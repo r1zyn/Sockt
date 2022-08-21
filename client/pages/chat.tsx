@@ -71,7 +71,7 @@ const Chat: NextPage = (): JSX.Element => {
 	return (
 		<>
 			<Meta
-				title={room !== "" ? `${room} - Sockt` : `Chat - Sockt`}
+				title={room !== "" ? `${room} - Sockt` : `The Power of The Chatroom | Sockt`}
 				description={room !== "" ? `Welcome to the chat room ${room}, created by ${
 					users[0] ? (users[0] as any).name : "no-one"
 				} and with ${users.length} current participants.` : "Immerse yourself in the enclosed, private space of the chat room, where limitations are non-existent."}
