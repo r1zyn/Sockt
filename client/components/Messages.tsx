@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Message } from "./Message";
+// import { MessageData } from "@mivir/react-discord-message";
 import { NextComponent } from "../lib/next";
 
 import onAppend from "../lib/utils/onChildAdd";

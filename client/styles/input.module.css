@@ -1,14 +1,13 @@
 .form {
     display: flex;
     background-color: #36393F;
-    padding: 1rem;
-    padding-left: 3rem;
+    padding: 1rem 3rem 1rem 3rem;
 }
 
 .input {
     --saturation-factor: 1;
     border: none;
-    padding: 1.2%;
+    padding: 0.75rem;
     width: 100%;
     font-size: 1.2em;
     border-top-left-radius: 0.5rem;
@@ -45,6 +44,12 @@
 }
 
 .sendButton {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.sendButton > svg {
     color: hsl(216, calc(var(--saturation-factor, 1)*3.7%), 73.5%) !important;
     background-color: transparent;
     text-transform: uppercase;
@@ -57,7 +62,7 @@
     cursor: pointer;
 }
 
-.sendButton:hover {
+.sendButton:hover > svg {
     color: #7289da !important;
 }
 
@@ -73,14 +78,10 @@
     width: 3rem;
     height: 3rem;
     text-align: center;
+    cursor: pointer;
 }
 
-.fileUploader {
-    width: 0.01px;
-    opacity: 0;
-}
-
-.uploaderIcon {
+.fileButton > svg {
     color: hsl(216, calc(var(--saturation-factor, 1)*3.7%), 73.5%) !important;
     background-color: transparent;
     text-transform: uppercase;
@@ -93,6 +94,17 @@
     cursor: pointer;
 }
 
-.uploaderIcon:hover {
+.fileButton > svg:hover {
     color: #7289da !important;
+}
+
+.fileUploader {
+    width: 0.01px;
+    opacity: 0;
+}
+
+@media (max-width: 740px) {
+    .textContainer {
+        display: none;
+    }
 }
