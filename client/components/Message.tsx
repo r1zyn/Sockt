@@ -68,7 +68,7 @@ export const Message: NextComponent<MessageProps> = ({
 						</a>
 					)}>
 					<p className={styles.messageText}>
-                            <Emoji text={text} />
+                        <Emoji text={text} />
 					</p>{" "}
 				</Linkify>
 			)}

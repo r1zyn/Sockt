@@ -7,6 +7,9 @@
     align-items: center;
     background: none;
     row-gap: 1.5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .headerFeatured {
@@ -66,7 +69,6 @@
 }
 
 @keyframes blink-caret {
-
     from,
     to {
         border-color: transparent

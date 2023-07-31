@@ -29,7 +29,10 @@
     align-items: flex-start;
     font-family: "Roboto", sans-serif;
     background-color: #2f3136;
-    width: 15%;
+    width: 17.5%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .textContainer>div {

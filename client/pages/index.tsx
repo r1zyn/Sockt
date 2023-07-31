@@ -40,7 +40,7 @@ const Home: NextPage = (): JSX.Element => {
 
 					<Link href="/join" passHref>
 						<a className={styles.joinButtonContainer}>
-							<button className={styles.joinButton}>Join Chat</button>
+							<button className={styles.joinButton}>Start Chatting</button>
 						</a>
 					</Link>
 				</div>

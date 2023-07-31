@@ -101,7 +101,7 @@ const Join: NextPage = (): JSX.Element => {
 						<button
 							className={`${styles.button} ${styles["mt-20"]}`}
 							type="submit">
-							Sign In
+							Enter Room
 						</button>
 					</form>
 				</div>
